@@ -19,8 +19,8 @@ module press_fit_post(diameter, height, chamfer=1, label=false, $fn=30) {
             ]);
         // Optionally inset text with diameter label on the top face
         if (label) {
-            translate([0,0,h-0.1])
-                linear_extrude(0.2)
+            translate([0,0,h-0.2])
+                linear_extrude(0.3)
                     text(
                         text=str(diameter),
                         size=2.2,

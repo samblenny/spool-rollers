@@ -2,7 +2,7 @@
 // SPDX-FileCopyrightText: Copyright 2024 Sam Blenny
 use <press-fit-post.scad>
 
-diameters = [7.84, 7.82, 7.80, 7.78, 7.76, 7.74, 7.72, 7.70];
+diameters = [7.98, 8.00, 8.02, 8.04, 8.06, 8.08, 8.10, 8.12];
 chamfer = 1;
 post_spacing = 18;
 
