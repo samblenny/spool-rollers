@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: CC-BY-SA-4.0
 // SPDX-FileCopyrightText: Copyright 2024 Sam Blenny
 
-module press_fit_post(diameter, height, chamfer, label="", $fn=30) {
+module press_fit_post(diameter, height, chamfer, label=false, $fn=30) {
     r = diameter / 2;
     h = height;
     c = chamfer;
@@ -18,12 +18,12 @@ module press_fit_post(diameter, height, chamfer, label="", $fn=30) {
                 [r, h-c], [r-c, h], [0, h],
             ]);
         // Optionally inset text with diameter label on the top face
-        if (label != "") {
+        if (label) {
             translate([0,0,h-0.1])
                 linear_extrude(0.2)
                     text(
-                        text=label,
-                        size=2.3,
+                        text=str(diameter),
+                        size=2.2,
                         font="Liberation Sans:style=Bold",
                         halign="center",
                         valign="center",
@@ -34,5 +34,5 @@ module press_fit_post(diameter, height, chamfer, label="", $fn=30) {
 }
 
 // Example post
-press_fit_post(diameter=7.80, height=9, chamfer=1, label="7.80");
+press_fit_post(diameter=7.81, height=9, chamfer=1, label=true);
 
