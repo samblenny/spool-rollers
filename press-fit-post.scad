@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: CC-BY-SA-4.0
 // SPDX-FileCopyrightText: Copyright 2024 Sam Blenny
 
-module press_fit_post(diameter, height, chamfer, label=false, $fn=30) {
+module press_fit_post(diameter, height, chamfer=1, label=false, $fn=30) {
     r = diameter / 2;
     h = height;
     c = chamfer;
