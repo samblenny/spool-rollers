@@ -19,7 +19,7 @@ module press_fit_post(diameter, height, chamfer=1, label=false, $fn=30) {
             ]);
         // Optionally inset text with diameter label on the top face
         if (label) {
-            translate([0,0,h-0.2])
+            translate([-0.12,0,h-0.22])
                 linear_extrude(0.3)
                     text(
                         text=str(diameter),
@@ -34,5 +34,5 @@ module press_fit_post(diameter, height, chamfer=1, label=false, $fn=30) {
 }
 
 // Example post
-press_fit_post(diameter=7.81, height=9, chamfer=1, label=true);
+press_fit_post(diameter=8.08, height=9, chamfer=1, label=true);
 
