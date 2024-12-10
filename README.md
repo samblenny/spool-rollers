@@ -12,7 +12,7 @@ of plastic cereal boxes into filament dry boxes.
 
 There are a lot of existing spool roller designs intended for use on a flat
 surface that has some clearance next to the spool. But, I need rollers to fit
-inside a specific model of plastic cereal box with large filets around the
+inside a specific model of plastic cereal box with large fillets around the
 bottom. There's not enough clearance for a boxy roller frame with square
 corners that extend beyond the sides of the spool.
 
@@ -28,5 +28,5 @@ The plan:
 
 2. For the frame, I will make a box with chamfered edges and four press fit
    posts. The frame will fit under the spool to avoid interference with the
-   cereal box's filets. The rollers will hold the spool up about 1 cm from the
-   bottom of the box to allow space for desiccant packs.
+   cereal box's fillets. The rollers will hold the spool up about 1 cm from
+   the bottom of the box to allow space for desiccant packs.
