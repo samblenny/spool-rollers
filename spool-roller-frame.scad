@@ -33,7 +33,7 @@ zip_h = 2;
 chamfer = 3;      // normal chamfer
 big_chamfer = 10; // chamfer that goes against the build plate
 
-locator_size = 5;
+locator_size = 7;
 locator_clearance = 0.1;
 
 // Configure OpenSCAD's curve triangulation granularity
@@ -199,20 +199,13 @@ module truncate(bypass=false) {
     }
 }
 
-hinge_w = 2;
-hinge_h = 0.8;
 // change the bypass argument to false to get a truncated model for
 // locator fit testing
 truncate(bypass=true) {
-    union() {
-        half_frame_step4();
-        rotate([0,0,180]) half_frame_step4();
-        // Add hinges
-        translate([0,frame_y*0.33,frame_z/2.05])
-            linear_extrude(hinge_h,center=true)
-                square([2.1*chamfer,hinge_w],center=true);
-        translate([0,-frame_y*0.33,frame_z/2.05])
-            linear_extrude(hinge_h,center=true)
-                square([2.1*chamfer,hinge_w],center=true);
+    // This half of the frame is for the STL file (print 2 copies of it)
+    half_frame_step4();
+    // This half shows what a build plate with 2 halves might look like
+    if($preview) {
+        #rotate([0,0,180]) half_frame_step4();
     }
 }
