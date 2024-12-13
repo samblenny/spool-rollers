@@ -2,8 +2,8 @@
 <!-- SPDX-FileCopyrightText: Copyright 2024 Sam Blenny -->
 # Spool Rollers
 
-This repo documents my project to make a 3D printable spool rollers to fit in
-a plastic cereal box. I wanted to make a filament dry box so I could feed
+This repo documents my project to make 3D printable spool rollers to fit in
+plastic cereal boxes. I wanted to make a filament dry box so I could feed
 filament without having to unseal the box.
 
 This didn't work out like I'd hoped because the plastic box was a little bit
@@ -12,7 +12,7 @@ side walls. But, it was a good project for learning to use OpenSCAD. Also, I
 made some models for calibrating XY hole/contour compensation and bearing
 press fit post diameter which may be useful elsewhere.
 
-This is what the finished spool roller looks like:
+This is what a finished spool roller looks like:
 
 ![fully assembled spool roller with spool](img/assembled-with-spool.jpeg)
 
@@ -24,11 +24,11 @@ This is what the finished spool roller looks like:
     ![XY compensation and bearing press fit calibration blocks](img/xycal-block-6_with_bearing-press-fit.jpeg)
 
 2. These are the two halves of the spool roller frame. The fins and slots are
-   designed with 0.1mm clearance, so, with well calibrated extrusion flow and
-   XY compensation, they press fit with light pressure. The zip ties hold
-   everything in place securely. Printing the frame halves at a 45° angle makes
-   the bearing posts strong without requiring supports that might mess up the
-   press fit tolerance.
+   designed with 0.1mm clearance. So, with well calibrated extrusion flow and
+   XY compensation, the two halves of the frame press fit with light pressure.
+   The zip ties hold everything in place securely. Printing the frame halves at
+   a 45° angle makes the bearing posts strong without requiring supports that
+   might mess up the bearing press fit tolerance.
 
     ![two halves of spool roller with zip ties](img/split-frame-with-loose-zip-ties.jpeg)
 
