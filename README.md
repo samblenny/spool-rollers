@@ -2,31 +2,43 @@
 <!-- SPDX-FileCopyrightText: Copyright 2024 Sam Blenny -->
 # Spool Rollers
 
-**WORK IN PROGRESS**
+This repo documents my project to make a 3D printable spool rollers to fit in
+a plastic cereal box. I wanted to make a filament dry box so I could feed
+filament without having to unseal the box.
 
-This repo documents my project to make 3D printable spool rollers to turn a set
-of plastic cereal boxes into filament dry boxes.
+This didn't work out like I'd hoped because the plastic box was a little bit
+too narrow to accomodate the bearings without them rubbing against the box's
+side walls. But, it was a good project for learning to use OpenSCAD. Also, I
+made some models for calibrating XY hole/contour compensation and bearing
+press fit post diameter which may be useful elsewhere.
+
+Here is a photo of the finished spool roller in the plastic box. You may be
+able to see that the right end of the roller is lifted up a little bit and
+that the bearing on the right end is jammed against some grip ridges that are
+molded into the box.
+
+![filament spool roller in a plastic cereal box](img/assembled-in-cereal-box.jpeg)
 
 
-## Context and Plan
+## Additional Photos
 
-There are a lot of existing spool roller designs intended for use on a flat
-surface that has some clearance next to the spool. But, I need rollers to fit
-inside a specific model of plastic cereal box with large fillets around the
-bottom. There's not enough clearance for a boxy roller frame with square
-corners that extend beyond the sides of the spool.
+1. These are my press fit and XY compensation calibration blocks:
 
-The spool will roll on greased 608-2RS bearings with an actual measured inner
-diameter of 7.84mm. Using slow-ish greased bearings, rather than ZZ or oiled
-2RS, will hopefully prevent unwanted unspooling when the extruder pauses.
+    ![XY compensation and bearing press fit calibration blocks](img/xycal-block-6_with_bearing-press-fit.jpeg)
 
-The plan:
+2. These are the two halves of the spool roller frame. The fins and slots are
+   designed with 0.1mm clearance, so with well calibrated extrusion flow and
+   XY compensation, they press fit with light pressure. The zip ties hold
+   everything in place securely.
 
-1. To find the right diameter of center post to get a secure press fit for the
-   roller bearings, I will start with a test fixture with several post
-   diameters.
+    ![two halves of spool roller with zip ties](img/split-frame-with-loose-zip-ties.jpeg)
 
-2. For the frame, I will make a box with chamfered edges and four press fit
-   posts. The frame will fit under the spool to avoid interference with the
-   cereal box's fillets. The rollers will hold the spool up about 1 cm from
-   the bottom of the box to allow space for desiccant packs.
+3. This is the fully assembled spool roller with 608-2RS press fit bearings.
+
+    ![assembled spool roller with bearings](img/fully-assembled.jpeg)
+
+4. Here, the spool roller is inside the air-tight plastic cereal box with a
+   spool of filament. The bearings are jammed against the side of the cereal
+   box, so the spool doesn't roll properly.
+
+    ![spool roller in cereal box with spool](img/assembled-with-spool.jpeg)
