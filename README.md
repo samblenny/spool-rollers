@@ -12,12 +12,9 @@ side walls. But, it was a good project for learning to use OpenSCAD. Also, I
 made some models for calibrating XY hole/contour compensation and bearing
 press fit post diameter which may be useful elsewhere.
 
-Here is a photo of the finished spool roller in the plastic box. You may be
-able to see that the right end of the roller is lifted up a little bit and
-that the bearing on the right end is jammed against some grip ridges that are
-molded into the box.
+This is what the finished spool roller looks like:
 
-![filament spool roller in a plastic cereal box](img/assembled-in-cereal-box.jpeg)
+![fully assembled spool roller with spool](img/assembled-with-spool.jpeg)
 
 
 ## Additional Photos
@@ -41,4 +38,5 @@ molded into the box.
    spool of filament. The bearings are jammed against the side of the cereal
    box, so the spool doesn't roll properly.
 
-    ![spool roller in cereal box with spool](img/assembled-with-spool.jpeg)
+    ![filament spool roller in a plastic cereal box](img/assembled-in-cereal-box.jpeg)
+
