@@ -24,9 +24,11 @@ This is what the finished spool roller looks like:
     ![XY compensation and bearing press fit calibration blocks](img/xycal-block-6_with_bearing-press-fit.jpeg)
 
 2. These are the two halves of the spool roller frame. The fins and slots are
-   designed with 0.1mm clearance, so with well calibrated extrusion flow and
+   designed with 0.1mm clearance, so, with well calibrated extrusion flow and
    XY compensation, they press fit with light pressure. The zip ties hold
-   everything in place securely.
+   everything in place securely. Printing the frame halves at a 45° angle makes
+   the bearing posts strong without requiring supports that might mess up the
+   press fit tolerance.
 
     ![two halves of spool roller with zip ties](img/split-frame-with-loose-zip-ties.jpeg)
 
